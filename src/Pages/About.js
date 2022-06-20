@@ -15,7 +15,7 @@ class About extends Component {
                                 <Button variant="primary" size="lg" href="/portfolio">Мои работы</Button>
                             </Col>
                             <Col md="3">
-                                <img src={img_photo} alt="photo"/>
+                                <img src={img_photo} alt=""/>
                             </Col>
 
                     </Row>

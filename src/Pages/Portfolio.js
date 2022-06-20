@@ -20,7 +20,7 @@ class Portfolio extends Component {
                                 <Card.Text>
                                     Nam venenatis accumsan est, ac tincidunt sem rutrum at. Sed sed odio facilisis, volutpat sem ut, venenatis urna. Nullam nec diam in leo scelerisque lobortis nec a tellus. Vivamus euismod, enim sit amet pellentesque tincidunt, libero turpis sagittis eros, eu dictum metus dui pulvinar quam. Mauris faucibus mauris arcu, at tincidunt neque condimentum ac. Fusce eu luctus sem, vel porta felis. Nunc at elementum elit, sit amet lobortis tortor. Ut et arcu sed purus malesuada tempor. Duis in dignissim neque, sit amet fringilla augue.
                                 </Card.Text>
-                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon}/></a></p>
+                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon} alt=""/></a></p>
                             </Card.Body>
                         </Card>
                         </Col>
@@ -35,7 +35,7 @@ class Portfolio extends Component {
                                 <Card.Text>
                                     Nam venenatis accumsan est, ac tincidunt sem rutrum at. Sed sed odio facilisis, volutpat sem ut, venenatis urna. Nullam nec diam in leo scelerisque lobortis nec a tellus. Vivamus euismod, enim sit amet pellentesque tincidunt, libero turpis sagittis eros, eu dictum metus dui pulvinar quam. Mauris faucibus mauris arcu, at tincidunt neque condimentum ac. Fusce eu luctus sem, vel porta felis. Nunc at elementum elit, sit amet lobortis tortor. Ut et arcu sed purus malesuada tempor. Duis in dignissim neque, sit amet fringilla augue.
                                 </Card.Text>
-                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon}/></a></p>
+                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon} alt=""/></a></p>
                             </Card.Body>
                         </Card>
                         </Col>
@@ -50,7 +50,7 @@ class Portfolio extends Component {
                                 <Card.Text>
                                     Nulla facilisi. Nam quis aliquet orci, a imperdiet tellus. Aliquam vestibulum convallis nibh, quis gravida quam rutrum vel. In varius faucibus semper. Nam et felis id turpis viverra eleifend sed ac eros. Cras vitae bibendum sapien, vel rhoncus metus. Quisque volutpat arcu eget ante sollicitudin maximus. Sed leo velit, tristique eget lectus et, mollis efficitur ex. Curabitur sit amet finibus purus. Nulla facilisi. Curabitur consequat ligula non augue consequat finibus.
                                 </Card.Text>
-                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon}/></a></p>
+                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon} alt=""/></a></p>
                             </Card.Body>
                         </Card>
                         </Col>
@@ -67,7 +67,7 @@ class Portfolio extends Component {
                                 <Card.Text>
                                     Nulla auctor turpis sit amet odio condimentum, at varius magna porta. Phasellus quis risus vitae erat mollis posuere eu non tortor. Duis mauris urna, elementum quis nisl vitae, fringilla porttitor lorem. Fusce semper nisl id maximus dictum. Morbi sit amet sem lacinia, pretium purus vel, porttitor urna. Cras imperdiet suscipit augue et faucibus. Nunc libero mauris, scelerisque eu lorem sed, cursus vehicula lectus.
                                 </Card.Text>
-                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon}/></a></p>
+                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon} alt=""/></a></p>
                             </Card.Body>
                         </Card>
                         </Col>
@@ -82,7 +82,7 @@ class Portfolio extends Component {
                                 <Card.Text>
                                     Sed ac neque eu neque egestas elementum ut vel ipsum. Fusce sit amet eleifend dui, eu feugiat mauris. Phasellus sodales placerat lacus, non semper arcu tempor vitae. Fusce tristique sapien ante, vitae posuere erat rutrum eget. Phasellus volutpat metus tellus, nec lacinia mi tincidunt eget. Praesent felis justo, ornare eu egestas eget, consectetur eu dui.
                                 </Card.Text>
-                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon}/></a></p>
+                                <p><a href="https://www.github.com/SteelBearr"><img src={github_icon} alt=""/></a></p>
                             </Card.Body>
                         </Card>
                         </Col>
