@@ -62,6 +62,11 @@ class Header extends Component {
                         <Route path="/portfolio" element={<Portfolio/>}/>
                         <Route path="/certificates" element={<Certificates/>}/>
                         <Route path="/contacts" element={<Contacts/>}/>
+                        <Route path="/Frontend-MTUCI/" element={<Home/>}/>
+                        <Route path="Frontend-MTUCI/about" element={<About/>}/>
+                        <Route path="Frontend-MTUCI/portfolio" element={<Portfolio/>}/>
+                        <Route path="Frontend-MTUCI/certificates" element={<Certificates/>}/>
+                        <Route path="Frontend-MTUCI/contacts" element={<Contacts/>}/>
                     </Routes>
                 </Router>
             </>

@@ -6,7 +6,7 @@ import {Button, Container} from "react-bootstrap";
 class Home extends Component {
     render() {
         return (
-            <div style={{backgroundImage: `url(${img_background})`, position:"absolute"}} className="modal-fullscreen">
+            <div style={{backgroundImage: `url(${img_background})`, position:"absolute" }} className="modal-fullscreen">
                 <Container>
                     <div className="text-center position-absolute top-50 start-50 translate-middle">
                         <h1>Добро пожаловать на мой сайт!</h1>
@@ -17,7 +17,6 @@ class Home extends Component {
 
                 </Container>
             </div>
-
         );
     }
 }
