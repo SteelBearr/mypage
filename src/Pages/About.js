@@ -16,7 +16,7 @@ class About extends Component {
                             </div>
                             </Col>
                             <Col md="6">
-                                <img src={img_photo} alt="photo"/>
+                                <img src={img_photo} alt=""/>
                             </Col>
 
                     </Row>

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Certificates extends Component {
     render() {
         return (
-            <h1></h1>
+            <h1>Сертификаты</h1>
         );
     }
 }
