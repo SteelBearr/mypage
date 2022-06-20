@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import img_background  from "../media/Background_white.png";
-import {Button, Container, Row} from "react-bootstrap";
+import {Button, Container} from "react-bootstrap";
 
 
 class Home extends Component {

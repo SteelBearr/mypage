@@ -1,6 +1,6 @@
-import React, {Component, useState} from 'react';
-import {Container, FormControl, Navbar, Nav, Form, Button, ButtonGroup, ToggleButton, Row, Col} from "react-bootstrap";
-import {Route, BrowserRouter as Router, Routes, Link} from "react-router-dom";
+import React, {Component} from 'react';
+import {Container, Navbar, Nav, Form, Row, Col} from "react-bootstrap";
+import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Home from '../Pages/Home.js';
 import About from '../Pages/About.js';
 import Portfolio from '../Pages/Portfolio.js';
@@ -36,7 +36,7 @@ class Header extends Component {
                             </Form>*/}
                             <Row xs={"auto"}>
                                 <Col className="mt-auto">
-                                    <img src={img_ru}/>
+                                    <img src={img_ru} alt="ru"/>
                                 </Col>
                                 <Col>
                                     <Form>
@@ -48,7 +48,7 @@ class Header extends Component {
                                     </Form>
                                 </Col>
                                 <Col className="mt-auto">
-                                    <img src={img_en}/>
+                                    <img src={img_en} alt="en"/>
                                 </Col>
                             </Row>
                         </Navbar.Collapse>

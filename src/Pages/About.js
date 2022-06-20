@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Tab, Nav, Row, Col, Button} from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
 import img_photo  from "../media/Painkiller_small.jpg";
 
 
@@ -16,7 +16,7 @@ class About extends Component {
                             </div>
                             </Col>
                             <Col md="6">
-                                <img src={img_photo}/>
+                                <img src={img_photo} alt="photo"/>
                             </Col>
 
                     </Row>

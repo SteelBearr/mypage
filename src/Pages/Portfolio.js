@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Card, CardGroup, Col, Container, Row} from "react-bootstrap";
+import {Card, CardGroup, Col, Container, Row} from "react-bootstrap";
 import github_icon from "../media/github_small.png";
 
 class Portfolio extends Component {
@@ -13,7 +13,8 @@ class Portfolio extends Component {
                         <Card>
                             <Card.Img
                                 variant="top"
-                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_6462337ad7ec4e705a501e7121aa1de7d9013dcb.1920x1080.jpg?t=1655472899"/>
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_6462337ad7ec4e705a501e7121aa1de7d9013dcb.1920x1080.jpg?t=1655472899"
+                                alt="work"/>
                             <Card.Body>
                                 <Card.Title>Work 1</Card.Title>
                                 <Card.Text>
@@ -27,7 +28,8 @@ class Portfolio extends Component {
                         <Card>
                             <Card.Img
                                 variant="top"
-                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_680799fc8f335607924c5703e10eb62780f91d97.1920x1080.jpg?t=1655472899"/>
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_680799fc8f335607924c5703e10eb62780f91d97.1920x1080.jpg?t=1655472899"
+                                alt="work"/>
                             <Card.Body>
                                 <Card.Title>Work 2</Card.Title>
                                 <Card.Text>
@@ -41,7 +43,8 @@ class Portfolio extends Component {
                         <Card>
                             <Card.Img
                                 variant="top"
-                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_9f89445fe1e07acc39d3537037f33eb90ad5834e.600x338.jpg?t=1655472899"/>
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_9f89445fe1e07acc39d3537037f33eb90ad5834e.600x338.jpg?t=1655472899"
+                                alt="work"/>
                             <Card.Body>
                                 <Card.Title>Work 3</Card.Title>
                                 <Card.Text>
@@ -57,7 +60,8 @@ class Portfolio extends Component {
                         <Card>
                             <Card.Img
                                 variant="top"
-                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_4257ced5cb8e2409547363316611c4cd4d718578.1920x1080.jpg?t=1655472899"/>
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_4257ced5cb8e2409547363316611c4cd4d718578.1920x1080.jpg?t=1655472899"
+                                alt="work"/>
                             <Card.Body>
                                 <Card.Title>Work 4</Card.Title>
                                 <Card.Text>
@@ -71,7 +75,8 @@ class Portfolio extends Component {
                         <Card>
                             <Card.Img
                                 variant="top"
-                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_9607dc7618a72e189f17d09e9b42a93ae8ee648c.1920x1080.jpg?t=1655472899"/>
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/323190/ss_9607dc7618a72e189f17d09e9b42a93ae8ee648c.1920x1080.jpg?t=1655472899"
+                                alt="work"/>
                             <Card.Body>
                                 <Card.Title>Work 5</Card.Title>
                                 <Card.Text>
