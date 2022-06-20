@@ -57,16 +57,11 @@ class Header extends Component {
 
                 <Router>
                     <Routes>
-                        <Route path="/" element={<Home/>}/>
-                        <Route path="/about" element={<About/>}/>
-                        <Route path="/portfolio" element={<Portfolio/>}/>
-                        <Route path="/certificates" element={<Certificates/>}/>
-                        <Route path="/contacts" element={<Contacts/>}/>
-                        <Route path="/Frontend-MTUCI/" element={<Home/>}/>
-                        <Route path="Frontend-MTUCI/about" element={<About/>}/>
-                        <Route path="Frontend-MTUCI/portfolio" element={<Portfolio/>}/>
-                        <Route path="Frontend-MTUCI/certificates" element={<Certificates/>}/>
-                        <Route path="Frontend-MTUCI/contacts" element={<Contacts/>}/>
+                        <Route path={process.env.PUBLIC_URL + '/'} element={<Home/>}/>
+                        <Route path={process.env.PUBLIC_URL + "/about"} element={<About/>}/>
+                        <Route path={process.env.PUBLIC_URL + "/portfolio"} element={<Portfolio/>}/>
+                        <Route path={process.env.PUBLIC_URL + "/certificates"} element={<Certificates/>}/>
+                        <Route path={process.env.PUBLIC_URL + "/contacts"} element={<Contacts/>}/>
                     </Routes>
                 </Router>
             </>
