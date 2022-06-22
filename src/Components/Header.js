@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Navbar, Nav, Form, Row, Col} from "react-bootstrap";
-import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import {Route, HashRouter, Routes} from "react-router-dom";
 import Home from '../Pages/Home.js';
 import About from '../Pages/About.js';
 import Portfolio from '../Pages/Portfolio.js';
@@ -26,14 +26,6 @@ class Header extends Component {
                                 <Nav.Link href={process.env.PUBLIC_URL + "/certificates"}>Сертификаты</Nav.Link>
                                 <Nav.Link href={process.env.PUBLIC_URL + "/contacts"}>Контакты</Nav.Link>
                             </Nav>
-                            {/*<Form className="d-flex">
-                                <FormControl
-                                    type="text"
-                                    placeholder="Search"
-                                    className="me-sm-2"
-                                />
-                                <Button variant="outline-info">Search</Button>
-                            </Form>*/}
                             <Row xs={"auto"}>
                                 <Col className="mt-auto">
                                     <img src={img_ru} alt="ru"/>
@@ -55,7 +47,7 @@ class Header extends Component {
                     </Container>
                 </Navbar>
 
-                <Router>
+                <HashRouter>
                     <Routes>
                         <Route path={process.env.PUBLIC_URL + '/'} element={<Home/>}/>
                         <Route path={process.env.PUBLIC_URL + "/about"} element={<About/>}/>
@@ -63,7 +55,7 @@ class Header extends Component {
                         <Route path={process.env.PUBLIC_URL + "/certificates"} element={<Certificates/>}/>
                         <Route path={process.env.PUBLIC_URL + "/contacts"} element={<Contacts/>}/>
                     </Routes>
-                </Router>
+                </HashRouter>
             </>
         );
     }
