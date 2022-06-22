@@ -13,7 +13,6 @@ import img_en  from "../media/en.png";
 
 class Header extends Component {
     render() {
-		console.log(process.env.PUBLIC_URL)
         return (
             <>
                 <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
