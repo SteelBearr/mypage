@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Frontend-MTUCI/static/css/main.46d565d3.css",
-    "main.js": "/Frontend-MTUCI/static/js/main.c0b14de1.js",
+    "main.js": "/Frontend-MTUCI/static/js/main.735b5482.js",
     "static/js/787.635aedaa.chunk.js": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js",
     "static/media/Background_white.png": "/Frontend-MTUCI/static/media/Background_white.a124c79b5eb245540f3b.png",
     "static/media/Painkiller_small.jpg": "/Frontend-MTUCI/static/media/Painkiller_small.e4561b62634c4676a33f.jpg",
     "index.html": "/Frontend-MTUCI/index.html",
     "main.46d565d3.css.map": "/Frontend-MTUCI/static/css/main.46d565d3.css.map",
-    "main.c0b14de1.js.map": "/Frontend-MTUCI/static/js/main.c0b14de1.js.map",
+    "main.735b5482.js.map": "/Frontend-MTUCI/static/js/main.735b5482.js.map",
     "787.635aedaa.chunk.js.map": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46d565d3.css",
-    "static/js/main.c0b14de1.js"
+    "static/js/main.735b5482.js"
   ]
 }
