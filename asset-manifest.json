@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/Frontend-MTUCI/static/css/main.46d565d3.css",
-    "main.js": "/Frontend-MTUCI/static/js/main.eb2317f7.js",
+    "main.css": "/Frontend-MTUCI/static/css/main.51956e57.css",
+    "main.js": "/Frontend-MTUCI/static/js/main.5d0ed7a5.js",
     "static/js/787.635aedaa.chunk.js": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js",
     "static/media/Background_white.png": "/Frontend-MTUCI/static/media/Background_white.a124c79b5eb245540f3b.png",
+    "static/media/System Administration Advanced_Small.jpg": "/Frontend-MTUCI/static/media/System Administration Advanced_Small.382d23a11fc31cd92392.jpg",
+    "static/media/English B1_Small.jpg": "/Frontend-MTUCI/static/media/English B1_Small.3b5b7599c64fe7cd5d64.jpg",
     "static/media/Painkiller_small.jpg": "/Frontend-MTUCI/static/media/Painkiller_small.e4561b62634c4676a33f.jpg",
+    "static/media/3D Moddeling_Small.jpg": "/Frontend-MTUCI/static/media/3D Moddeling_Small.03153cd84d80138fc125.jpg",
+    "static/media/Inconsolata-Regular.ttf": "/Frontend-MTUCI/static/media/Inconsolata-Regular.ed7f6e5be703abdc4a71.ttf",
     "index.html": "/Frontend-MTUCI/index.html",
-    "main.46d565d3.css.map": "/Frontend-MTUCI/static/css/main.46d565d3.css.map",
-    "main.eb2317f7.js.map": "/Frontend-MTUCI/static/js/main.eb2317f7.js.map",
+    "main.51956e57.css.map": "/Frontend-MTUCI/static/css/main.51956e57.css.map",
+    "main.5d0ed7a5.js.map": "/Frontend-MTUCI/static/js/main.5d0ed7a5.js.map",
     "787.635aedaa.chunk.js.map": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46d565d3.css",
-    "static/js/main.eb2317f7.js"
+    "static/css/main.51956e57.css",
+    "static/js/main.5d0ed7a5.js"
   ]
 }
