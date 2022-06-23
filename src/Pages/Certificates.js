@@ -13,7 +13,7 @@ class Certificates extends Component {
                 <h2 className="text-center m-4">Сертификаты</h2>
 
                     <Row>
-                        <Col>
+                        <Col style={{display:"flex",justifyContent:"center"}}>
                           <img
                                     src={sa}
                                     alt="work"/>
