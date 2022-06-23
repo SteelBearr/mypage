@@ -40,7 +40,8 @@ class Contacts extends Component {
                 <Row className="mt-2">
                     <Col>
                         <img src={gmail_icon}  height="30px" alt="gmail"/>
-                        <b><a className="ms-2" ref={this.target} style={{color: "black", textDecoration:"underline", cursor:"pointer"}} onClick={() => {navigator.clipboard.writeText("steelbearrr@gmail.com");console.log(this.show); this.setState({show: !this.show})}}>steelbearrr@gmail.com</a></b>
+                        <button className="ms-2" ref={this.target} style={{color: "black", textDecoration:"underline", cursor:"pointer",background:"none",
+                            border:"none", fontWeight:"bold"}} onClick={() => {navigator.clipboard.writeText("steelbearrr@gmail.com");console.log(this.show); this.setState({show: !this.show})}}>steelbearrr@gmail.com</button>
                         <Overlay target={this.target.current} show={Boolean(this.show)} placement="bottom">
                             {(props) => (
                                 <Tooltip {...props}>

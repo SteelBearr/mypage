@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardGroup, Col, Container, Row} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import moddeling from "../media/3D Moddeling_Small.jpg";
 import b1 from "../media/English B1_Small.jpg";
 import sa from "../media/System Administration Advanced_Small.jpg";
