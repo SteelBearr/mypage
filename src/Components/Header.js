@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Navbar, Nav, Form, Row, Col} from "react-bootstrap";
-import {Route, HashRouter, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Home from '../Pages/Home.js';
 import About from '../Pages/About.js';
 import Portfolio from '../Pages/Portfolio.js';
@@ -20,11 +20,11 @@ class Header extends Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link href={process.env.PUBLIC_URL + '/'}>Главная</Nav.Link>
-                                <Nav.Link href={process.env.PUBLIC_URL + "/about"}>Обо мне</Nav.Link>
-                                <Nav.Link href={process.env.PUBLIC_URL + "/portfolio"}>Портфолио</Nav.Link>
-                                <Nav.Link href={process.env.PUBLIC_URL + "/certificates"}>Сертификаты</Nav.Link>
-                                <Nav.Link href={process.env.PUBLIC_URL + "/contacts"}>Контакты</Nav.Link>
+                                <Nav.Link href={process.env.PUBLIC_URL + '/#/'}>Главная</Nav.Link>
+                                <Nav.Link href={process.env.PUBLIC_URL + "/#/about"}>Обо мне</Nav.Link>
+                                <Nav.Link href={process.env.PUBLIC_URL + "/#/portfolio"}>Портфолио</Nav.Link>
+                                <Nav.Link href={process.env.PUBLIC_URL + "/#/certificates"}>Сертификаты</Nav.Link>
+                                <Nav.Link href={process.env.PUBLIC_URL + "/#/contacts"}>Контакты</Nav.Link>
                             </Nav>
                             <Row xs={"auto"}>
                                 <Col className="mt-auto">
@@ -47,7 +47,7 @@ class Header extends Component {
                     </Container>
                 </Navbar>
 
-                <HashRouter>
+                {/*<BrowserRouter>
                     <Routes>
                         <Route path={process.env.PUBLIC_URL + '/'} element={<Home/>}/>
                         <Route path={process.env.PUBLIC_URL + "/about"} element={<About/>}/>
@@ -55,7 +55,14 @@ class Header extends Component {
                         <Route path={process.env.PUBLIC_URL + "/certificates"} element={<Certificates/>}/>
                         <Route path={process.env.PUBLIC_URL + "/contacts"} element={<Contacts/>}/>
                     </Routes>
-                </HashRouter>
+                </BrowserRouter>*/}
+                    <Routes>
+                        <Route exact path='/' element={<Home/>}/>
+                        <Route path="/about" element={<About/>}/>
+                        <Route path="/portfolio" element={<Portfolio/>}/>
+                        <Route path="/certificates" element={<Certificates/>}/>
+                        <Route path="/contacts" element={<Contacts/>}/>
+                    </Routes>
             </>
         );
     }
