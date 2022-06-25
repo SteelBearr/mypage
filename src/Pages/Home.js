@@ -1,24 +1,38 @@
 import React, {Component} from 'react';
-import img_background  from "../media/Background_white.png";
+import imgBackground  from "../assets/BackgroundHiResWhite.jpg";
+import imgBackgroundCol  from "../assets/ColBack.png";
 import {Button, Container} from "react-bootstrap";
 
 
+
 class Home extends Component {
+    componentDidMount() {
+        document.title = "Главная"
+        document.querySelector("#home").className = "nav-link active"
+        document.querySelector("body").style.backgroundImage = `url(${imgBackground})`
+        document.querySelector("body").style.backgroundSize = "cover"
+        document.querySelector("body").style.backgroundPosition = "center"
+        window.scrollTo(0, 0)
+    }
+    componentWillUnmount() {
+        document.querySelector("#home").classList.remove("active")
+        document.querySelector("body").style.backgroundImage = `url(${imgBackgroundCol}), url(${imgBackgroundCol})`
+        document.querySelector("body").style.backgroundSize = ""
+        document.querySelector("body").style.backgroundPosition = "left, right"
+    }
     render() {
         return (
-                <Container className="text-center" style={{
-                    backgroundImage: `url(${img_background})`,
-                    display: "flex",
-                    height: "94.2%",
-                    maxWidth: "100%",
+                <Container className="text-center"  style={{height:"calc(100% - 56px)", display: "flex",
                     alignItems: "center",
-                    justifyContent: "center"}}>
-                    <div style={{maxWidth: "1320px"}}>
-                        <h1>Добро пожаловать на мой сайт!</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in nisi ut nulla facilisis mattis at at eros. Sed non ultrices tortor. Fusce pretium vel massa in accumsan. Sed mollis orci at congue ullamcorper. Nam iaculis gravida imperdiet. Vivamus in justo ut felis pellentesque convallis sit amet in sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
-                        <Button variant="primary" size="lg" href={process.env.PUBLIC_URL + "/#/about"}>Узнать больше</Button>
+                    justifyContent: "center",
+                flexWrap: "wrap"}}>
+                    <div style={{width: "70%"}}>
+                        <h1 style={{color: "#000077"}}>Добро пожаловать на мой сайт!</h1>
+                        <p>Здравствуй, меня зовут Михаил, я студент московского технического университета связи и информатики, обучаюсь по направлению "Иформатика и вычислительная техника". Занимаюсь программированием, фотообработкой, видеомонтажём, 3D моделированием, практически всем, что связано с техникой.</p>
+                        <Button variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/about"} data-rr-ui-event-key="/#/about">Узнать больше</Button>
                     </div>
                 </Container>
+
         );
     }
 }
