@@ -1,21 +1,33 @@
 {
   "files": {
-    "main.css": "/Frontend-MTUCI/static/css/main.51956e57.css",
-    "main.js": "/Frontend-MTUCI/static/js/main.49d91159.js",
+    "main.css": "/Frontend-MTUCI/static/css/main.2602d544.css",
+    "main.js": "/Frontend-MTUCI/static/js/main.d0d43a38.js",
     "static/js/787.635aedaa.chunk.js": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js",
-    "static/media/Background_white.png": "/Frontend-MTUCI/static/media/Background_white.a124c79b5eb245540f3b.png",
+    "static/media/System Administration Advanced.jpg": "/Frontend-MTUCI/static/media/System Administration Advanced.2a6e580335a6b0428e48.jpg",
+    "static/media/English B1.jpg": "/Frontend-MTUCI/static/media/English B1.f6e5ba5ff49e766eafc7.jpg",
+    "static/media/NavBackHiRes.jpg": "/Frontend-MTUCI/static/media/NavBackHiRes.8a797be1826a3cb7d5dd.jpg",
+    "static/media/BackgroundHiResWhite.jpg": "/Frontend-MTUCI/static/media/BackgroundHiResWhite.c30f734e7904ad030cfb.jpg",
     "static/media/System Administration Advanced_Small.jpg": "/Frontend-MTUCI/static/media/System Administration Advanced_Small.382d23a11fc31cd92392.jpg",
+    "static/media/3D Modeling_Big.jpg": "/Frontend-MTUCI/static/media/3D Modeling_Big.f25ee998c790a97470d6.jpg",
+    "static/media/TechnicalInspection.jpg": "/Frontend-MTUCI/static/media/TechnicalInspection.da1b5d73f52eee3f7a8b.jpg",
+    "static/media/ColBack.png": "/Frontend-MTUCI/static/media/ColBack.0ef8fa3a2f8e3c57848f.png",
     "static/media/English B1_Small.jpg": "/Frontend-MTUCI/static/media/English B1_Small.3b5b7599c64fe7cd5d64.jpg",
     "static/media/Painkiller_small.jpg": "/Frontend-MTUCI/static/media/Painkiller_small.e4561b62634c4676a33f.jpg",
-    "static/media/3D Moddeling_Small.jpg": "/Frontend-MTUCI/static/media/3D Moddeling_Small.03153cd84d80138fc125.jpg",
-    "static/media/Inconsolata-Regular.ttf": "/Frontend-MTUCI/static/media/Inconsolata-Regular.ed7f6e5be703abdc4a71.ttf",
+    "static/media/DarkestDungeonMod.jpg": "/Frontend-MTUCI/static/media/DarkestDungeonMod.f5d8b9b67aa911fcdc20.jpg",
+    "static/media/BuisinessCard.jpg": "/Frontend-MTUCI/static/media/BuisinessCard.ab0a328b41c59c33e5e0.jpg",
+    "static/media/DataBaseProject.jpg": "/Frontend-MTUCI/static/media/DataBaseProject.ab3e87b18a7e7d3a4ce1.jpg",
+    "static/media/Crawler.jpg": "/Frontend-MTUCI/static/media/Crawler.0cc9de53bdffcf69ad8b.jpg",
+    "static/media/Inconsolata-Regular.otf": "/Frontend-MTUCI/static/media/Inconsolata-Regular.f2ed243a71066cd124b5.otf",
+    "static/media/Witcher3Mod.jpg": "/Frontend-MTUCI/static/media/Witcher3Mod.e46275cf3916122fb191.jpg",
+    "static/media/eng.png": "/Frontend-MTUCI/static/media/eng.7c4f54ca6642b133fa19.png",
+    "static/media/GameSaver.jpg": "/Frontend-MTUCI/static/media/GameSaver.b2d6d7265166adc553e2.jpg",
     "index.html": "/Frontend-MTUCI/index.html",
-    "main.51956e57.css.map": "/Frontend-MTUCI/static/css/main.51956e57.css.map",
-    "main.49d91159.js.map": "/Frontend-MTUCI/static/js/main.49d91159.js.map",
+    "main.2602d544.css.map": "/Frontend-MTUCI/static/css/main.2602d544.css.map",
+    "main.d0d43a38.js.map": "/Frontend-MTUCI/static/js/main.d0d43a38.js.map",
     "787.635aedaa.chunk.js.map": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51956e57.css",
-    "static/js/main.49d91159.js"
+    "static/css/main.2602d544.css",
+    "static/js/main.d0d43a38.js"
   ]
 }
