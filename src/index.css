@@ -14,9 +14,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   font-family: "Inconsolata", serif !important;
-  background-image: url('/src/assets/ColBack.png'), url('/src/assets/ColBack.png');
+  background-image: url('/src/assets/colBack.png'), url('/src/assets/colBack.png');
   background-repeat: repeat-y, repeat-y;
-  background-position: left, right
+  background-position: left, right;
 
 }
 
@@ -61,7 +61,36 @@ p{
   font-weight: normal !important;
 }
 
+span{
+  white-space: nowrap
+}
 
+.accordion-item{
+  border: none !important;
+}
+
+.accordion-button::after{
+  margin: auto !important;
+}
+
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: transparent !important;
+}
+
+.accordion-body{
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 
 
 

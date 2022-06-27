@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {Button, Col, Container, Row} from "react-bootstrap";
 import imgModeling from "../assets/3D Modeling_Big.jpg";
-import imgEnglishB1Level from "../assets/English B1_Small.jpg";
-import imgEnglishB1LevelBig from "../assets/English B1.jpg";
-import imgSystemAdministration from "../assets/System Administration Advanced_Small.jpg";
-import imgSystemAdministrationBig from "../assets/System Administration Advanced.jpg";
+import imgEnglishB1Level from "../assets/englishB1Small.jpg";
+import imgEnglishB1LevelBig from "../assets/englishB1.jpg";
+import imgSystemAdministration from "../assets/systemAdministrationAdvancedSmall.jpg";
+import imgSystemAdministrationBig from "../assets/systemAdministrationAdvanced.jpg";
 
 
 
@@ -25,13 +25,13 @@ class Certificates extends Component {
                                 <Col sm="12" md="6" style={{display:"flex",justifyContent:"center",alignItems: "center"}}>
                                   <a href={imgSystemAdministrationBig} rel="noreferrer" target="_blank"><img style={{width: "100%"}}
                                        src={imgSystemAdministration}
-                                       alt="work"/></a>
+                                       alt="System Administration Certificate"/></a>
                                 </Col>
                                 <Col sm="12" md="6" style={{display:"flex",justifyContent:"center",alignItems: "center"}}>
                                     <a href={imgEnglishB1LevelBig} rel="noreferrer" target="_blank"><img style={{width: "100%"}}
                                         className="mt-4"
                                         src={imgEnglishB1Level}
-                                        alt="work"/></a>
+                                        alt="English B1 Level Certificate"/></a>
                                 </Col>
                             </Row>
                             <Row sm="12" className="justify-content-md-center">
@@ -39,7 +39,7 @@ class Certificates extends Component {
                                     <a href={imgModeling} rel="noreferrer" target="_blank"><img style={{width: "100%"}}
                                     className="mt-4"
                                     src={imgModeling}
-                                    alt="work"/></a>
+                                    alt="3D Modeling Certificate"/></a>
                                 </Col>
                             </Row>
                             <Row className="justify-content-center">
