@@ -9,10 +9,11 @@ import imageDarkestDungeonMod from "../assets/darkestDungeonMod.jpg"
 import imageWitcher3Mod from "../assets/witcher3Mod.jpg"
 import imageGameSaver from "../assets/gameSaver.jpg"
 import Work from "../components/Work";
+import {langArr} from "../localization/PortfolioTable";
 
 class Portfolio extends Component {
     componentDidMount() {
-        document.title = "Портфолио"
+        document.title = langArr[0][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text
         document.querySelector("#portfolio").className = "nav-link active"
         window.scrollTo(0, 0)
     }
@@ -21,45 +22,46 @@ class Portfolio extends Component {
     }
     render() {
         return (
+            document.title = langArr[0][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text,
             <Container>
-                <h2 style={{color: "#000077"}} className="text-center p-4">Портфолио</h2>
+                <h2 style={{color: "#000077"}} className="text-center p-4">{langArr[0][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}</h2>
                 <CardGroup>
                     <Row className="justify-content-center">
-                        <Work img={imageDataBaseProject} alt="Data Base Project"  title="База данных для автоматизированной системы на предприятии"
-                              text={<>Спроектированная на <Badge pill bg="secondary">PostgreSQL</Badge> база данных для проекта по созданию автоматизированной системы управления территориально-распределёнными воздушными перевозками. В ней созданы группы пользователей, разделённые по уровню доступа к данным.</>}
+                        <Work img={imageDataBaseProject} alt={langArr[1][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}  title={langArr[1][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
+                              text={langArr[1][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
                               link="https://www.github.com/SteelBearr"/>
 
-                        <Work img={imageCrawler} alt="Crawler"  title="Поисковый робот"
-                              text={<>Приложение без пользовательского интерфейса на языке программирования <span><Badge pill bg="secondary">Java</Badge>,</span> представляющее собой поисковый робот для индексации веб-страниц. Программа посылает запрос на заданный веб-сервер, анализирует полученный ответ на наличие ссылок на ещё не просмотренные веб-страницы и анализирует их таким же образом на следующей итерации до тех пор, пока не будет достигнута заданная глубина. В приложении реализована многопоточность. Такая программа может использоваться для поисковых сервисов.</>}
+                        <Work img={imageCrawler} alt={langArr[2][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}  title={langArr[2][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
+                              text={langArr[2][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
                               link="https://www.github.com/SteelBearr"/>
 
-                        <Work img={imageShop} alt="Business Card Site"  title="Сайт для магазина одежды"
-                              text={<>Первый веб-проект. На странице представлена краткая информация о компании, галерея, контакты и форма для отклика соискателей. Используются библиотеки <Badge pill bg="secondary">Boostrap</Badge> и <span><Badge pill bg="secondary">jQuery</Badge>.</span></>}
+                        <Work img={imageShop} alt={langArr[3][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}  title={langArr[3][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
+                              text={langArr[3][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
                               link=""/>
 
-                        <Work img={imageAuthorization} alt="Authorization"  title="Система авторизации"
-                              text={<>Приложение на языке программирования <span><Badge pill bg="secondary">C#</Badge>,</span> представляющее собой систему авторизации с возможностью регистрации новых пользователей. Хранение паролей осуществляется в зашифрованном виде.</>}
+                        <Work img={imageAuthorization} alt={langArr[4][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}  title={langArr[4][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
+                              text={langArr[4][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
                               link="https://www.github.com/SteelBearr"/>
 
-                        <Work img={imageTechnicalInspection} alt="TechnicalInspection"  title="Вспомогательная система для технического осмотра автомобиля"
-                              text={<>Приложение на языке программирования <Badge pill bg="secondary">С#</Badge> визуализирует процесс технического осмотра автомобилей. По мере его прохождения вносятся данные, и по окончании формируется отчёт с выделением параметров, не соответствующих нормам. В программе представлен ряд автомобилей для отображения.</>}
+                        <Work img={imageTechnicalInspection} alt={langArr[5][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}  title={langArr[5][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
+                              text={langArr[5][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
                               link="https://www.github.com/SteelBearr"/>
 
-                        <Work img={imageDarkestDungeonMod} alt="Darkest DungeonMod"  title="Модификация для игры Darkest Dungeon"
-                              text="Модификация для игры Darkest Dungeon, добавляющая в игровой процесс нового персонажа. Для персонажа созданы текстуры, способности, диалоговые фразы, звуковые эффекты, а также уникальные внутреигровые события."
+                        <Work img={imageDarkestDungeonMod} alt={langArr[6][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}  title={langArr[6][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
+                              text={langArr[6][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
                               link="https://www.github.com/SteelBearr"/>
 
-                        <Work img={imageWitcher3Mod} alt="The Witcher 3 Mod"  title="Модификация для игры The Witcher 3: Wild Hunt"
-                              text={<>Модификация для игры The Witcher 3: Wild Hunt, добавляющая в игровой процесс новые предметы для внутреигровой мини-игры "Гвинт", а также изменяющая параметры уже существущих предметов для внесения баланса.</>}
+                        <Work img={imageWitcher3Mod} alt={langArr[7][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}  title={langArr[7][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
+                              text={langArr[7][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
                               link="https://www.github.com/SteelBearr"/>
 
-                        <Work img={imageGameSaver} alt="iGame Saver"  title={<>Система управления <div style={{whiteSpace:"nowrap"}}>сохранениями <Badge pill bg="warning"><b>В разработке</b></Badge></div></>}
-                              text={<>Далеко не во всех компьютерных играх реализована система отдельных сохранений, часто используется система автосохранений. Приложение, реализованное на языке программирования <span><Badge pill bg="secondary">C#</Badge>,</span> создаёт систему отдельных сохранений для большинства одиночных игр.</>}
+                        <Work img={imageGameSaver} alt={langArr[8][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}  title={langArr[8][0][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
+                              text={langArr[8][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}
                               link="https://www.github.com/SteelBearr"/>
 
                         <Row className="justify-content-center">
-                            <Button className="mb-3 d-lg-block d-md-block d-sm-none d-none" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"} style={{width:"211px"}} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>Мои сертификаты</Button>
-                            <Button className="mb-3 d-lg-none d-md-none d-sm-block" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>Мои сертификаты</Button>
+                            <Button className="mb-3 d-lg-block d-md-block d-sm-none d-none" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"} style={{width:"214px"}} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>{langArr[0][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}</Button>
+                            <Button className="mb-3 d-lg-none d-md-none d-sm-block" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>{langArr[0][1][window.localStorage.getItem('lang') == "true" ? 1 : 0].text}</Button>
                         </Row>
                     </Row>
                 </CardGroup>

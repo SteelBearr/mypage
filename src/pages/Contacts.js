@@ -4,7 +4,7 @@ import iconVk from "../assets/vk.png";
 import iconTelegram from "../assets/telegram.png";
 import iconGithub from "../assets/github.png";
 import iconGmail from "../assets/gmail.png";
-
+import {langArr} from "../localization/ContactsTable"
 
 
 class Contacts extends Component {
@@ -12,10 +12,10 @@ class Contacts extends Component {
         super(props);
         this.state = {show: false}
         this.target = React.createRef()
-        this.state = {lang: "ru"}
+        this.state = {lang: window.localStorage.getItem('lang') == "true" ? 1 : 0}
     }
     componentDidMount() {
-        document.title = "Контакты"
+        document.title = langArr[0][this.state.lang].text
         document.querySelector("#contacts").className = "nav-link active"
     }
     componentWillUnmount() {
@@ -23,8 +23,10 @@ class Contacts extends Component {
     }
     render() {
         return (
+            this.state.lang = window.localStorage.getItem('lang') == "true" ? 1 : 0,
+            document.title = langArr[0][this.state.lang].text,
             <Container>
-                <h2 style={{color: "#000077"}} className="text-center p-4">Контакты</h2>
+                <h2 style={{color: "#000077"}} className="text-center p-4">{langArr[0][this.state.lang].text}</h2>
                 <Row>
                     <Col>
                         <a rel="noreferrer" target="_blank" href="https://vk.com/steelbearrr"><img src={iconVk}  height="30px" alt="Vk"/></a>

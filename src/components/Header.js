@@ -10,6 +10,7 @@ import iconRu  from "../assets/rus.png";
 import iconEn  from "../assets/eng.png";
 import imgBackgroundHeader from "../assets/navBackHiRes.jpg";
 import {useTransition, animated} from "react-spring";
+import {langArr} from "../localization/HeaderTable";
 
 function toggleAnim(){
     if (!JSON.parse(window.localStorage.getItem('anim')))
@@ -39,11 +40,11 @@ function Header(){
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link id="home" href={process.env.PUBLIC_URL + '/#/'} onClick={toggleAnim()}>Главная</Nav.Link>
-                            <Nav.Link id="about" href={process.env.PUBLIC_URL + "/#/about"} onClick={toggleAnim()}>Обо мне</Nav.Link>
-                            <Nav.Link id="portfolio" href={process.env.PUBLIC_URL + "/#/portfolio"} onClick={toggleAnim()}>Портфолио</Nav.Link>
-                            <Nav.Link id="certificates" href={process.env.PUBLIC_URL + "/#/certificates"} onClick={toggleAnim()}>Сертификаты</Nav.Link>
-                            <Nav.Link id="contacts" href={process.env.PUBLIC_URL + "/#/contacts"} onClick={toggleAnim()}>Контакты</Nav.Link>
+                            <Nav.Link id="home" href={process.env.PUBLIC_URL + '/#/'} onClick={toggleAnim()}>{langArr[0][lang ? 1 : 0].text}</Nav.Link>
+                            <Nav.Link id="about" href={process.env.PUBLIC_URL + "/#/about"} onClick={toggleAnim()}>{langArr[1][lang ? 1 : 0].text}</Nav.Link>
+                            <Nav.Link id="portfolio" href={process.env.PUBLIC_URL + "/#/portfolio"} onClick={toggleAnim()}>{langArr[2][lang ? 1 : 0].text}</Nav.Link>
+                            <Nav.Link id="certificates" href={process.env.PUBLIC_URL + "/#/certificates"} onClick={toggleAnim()}>{langArr[3][lang ? 1 : 0].text}</Nav.Link>
+                            <Nav.Link id="contacts" href={process.env.PUBLIC_URL + "/#/contacts"} onClick={toggleAnim()}>{langArr[4][lang ? 1 : 0].text}</Nav.Link>
                         </Nav>
                         <Row xs={"auto"}>
                             <Col className="mt-auto">

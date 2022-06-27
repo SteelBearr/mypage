@@ -1,0 +1,31 @@
+import {Badge} from "react-bootstrap";
+
+
+export const langArr = [
+    [[{lang: "ru", text: "Портфолио"}, {lang: "en", text: "Portfolio"}],
+        [{lang: "ru", text: "Мои сертификаты"}, {lang: "en", text: "My certificates"}]],
+
+    [[{lang: "ru", text: "База данных для автоматизированной системы на предприятии"}, {lang: "en", text: "Database for an automated system in an enterprise"}],
+        [{lang: "ru", text: <>Спроектированная на <Badge pill bg="secondary">PostgreSQL</Badge> база данных для проекта по созданию автоматизированной системы управления территориально-распределёнными воздушными перевозками. В ней созданы группы пользователей, разделённые по уровню доступа к данным.</>}, {lang: "en", text: <>Database designed on <Badge pill bg="secondary">PostgreSQL</Badge> for a project to create an automated system for managing geographically distributed air transportation. There were created user groups, divided by the level of access to data.</>}],],
+
+    [[{lang: "ru", text: "Поисковый робот"}, {lang: "en", text: "Crawler"}],
+        [{lang: "ru", text: <>Приложение без пользовательского интерфейса на языке программирования <span><Badge pill bg="secondary">Java</Badge>,</span> представляющее собой поисковый робот для индексации веб-страниц. Программа посылает запрос на заданный веб-сервер, анализирует полученный ответ на наличие ссылок на ещё не просмотренные веб-страницы и анализирует их таким же образом на следующей итерации до тех пор, пока не будет достигнута заданная глубина. В приложении реализована многопоточность. Такая программа может использоваться для поисковых сервисов.</>}, {lang: "en", text: <>An application without a user interface in the <Badge pill bg="secondary">Java</Badge> programming language, which is a crawler for indexing web pages. The program sends a request to a given web server, analyzes the received response for links to web pages that have not yet been viewed, and analyzes them in the same way at the next iteration until the specified depth is reached. The application implements multithreading. Such a program can be used for search services.</>}],],
+
+    [[{lang: "ru", text: "Сайт для магазина одежды"}, {lang: "en", text: "Clothing store website"}],
+        [{lang: "ru", text: <>Первый веб-проект. На странице представлена краткая информация о компании, галерея, контакты и форма для отклика соискателей. Используются библиотеки <Badge pill bg="secondary">Boostrap</Badge> и <span><Badge pill bg="secondary">jQuery</Badge>.</span></>}, {lang: "en", text: <>First web project. The page contains brief information about the company, a gallery, contacts and a form for responding to applicants. The <Badge pill bg="secondary">Boostrap</Badge> and <Badge pill bg="secondary">jQuery</Badge> libraries are used.</>}]],
+
+    [[{lang: "ru", text: "Система авторизации"}, {lang: "en", text: "Authorization system"}],
+        [{lang: "ru", text: <>Приложение на языке программирования <span><Badge pill bg="secondary">C#</Badge>,</span> представляющее собой систему авторизации с возможностью регистрации новых пользователей. Хранение паролей осуществляется в зашифрованном виде.</>}, {lang: "en", text: <>An application in the <Badge pill bg="secondary">C#</Badge> programming language, which is an authorization system with the ability to register new users. Passwords are stored in encrypted form.</>}]],
+
+    [[{lang: "ru", text: "Вспомогательная система для технического осмотра автомобиля"}, {lang: "en", text: "Auxiliary system for vehicle inspection"}],
+        [{lang: "ru", text: <>Приложение на языке программирования <Badge pill bg="secondary">С#</Badge> визуализирует процесс технического осмотра автомобилей. По мере его прохождения вносятся данные, и по окончании формируется отчёт с выделением параметров, не соответствующих нормам. В программе представлен ряд автомобилей для отображения.</>}, {lang: "en", text: <>The application in the <Badge pill bg="secondary">C#</Badge> programming language visualizes the process of technical inspection of cars. As it passes, data is entered, and at the end a report is generated highlighting parameters that do not meet the standards. The program presents a number of cars to display.</>}]],
+
+    [[{lang: "ru", text: "Модификация для игры Darkest Dungeon"}, {lang: "en", text: "Mod for the Darkest Dungeon game"}],
+        [{lang: "ru", text: "Модификация для игры Darkest Dungeon, добавляющая в игровой процесс нового персонажа. Для персонажа созданы текстуры, способности, диалоговые фразы, звуковые эффекты, а также уникальные внутреигровые события."}, {lang: "en", text: "Modification for the Darkest Dungeon game, which adds a new character to the gameplay. Textures, abilities, dialogue phrases, sound effects, as well as unique in-game events have been created for the character."}]],
+
+    [[{lang: "ru", text: "Модификация для игры The Witcher 3: Wild Hunt"}, {lang: "en", text: "Mod for The Witcher 3: Wild Hunt game"}],
+        [{lang: "ru", text: <>Модификация для игры The Witcher 3: Wild Hunt, добавляющая в игровой процесс новые предметы для внутреигровой мини-игры "Гвинт", а также изменяющая параметры уже существущих предметов для внесения баланса.</>}, {lang: "en", text: <>A modification for The Witcher 3: Wild Hunt game that adds new items to the gameplay for the in-game "Gwent" mini-game, as well as changing the parameters of existing items to balance them.</>}]],
+
+    [[{lang: "ru", text: <>Система управления сохранениями <Badge pill bg="warning"><b>В разработке</b></Badge></>}, {lang: "en", text: <>Saves control system <Badge pill bg="warning">Work in progress</Badge></>}],
+        [{lang: "ru", text: <>Далеко не во всех компьютерных играх реализована система отдельных сохранений, часто используется система автосохранений. Приложение, реализованное на языке программирования <span><Badge pill bg="secondary">C#</Badge>,</span> создаёт систему отдельных сохранений для большинства одиночных игр.</>}, {lang: "en", text: <>Not all computer games have a system of separate saves, the autosaves system is often used. The application, implemented in the <Badge pill bg="secondary">C#</Badge> programming language, creates a separate saves system for most single-player games.</>}]],
+]
