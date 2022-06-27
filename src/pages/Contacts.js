@@ -12,10 +12,9 @@ class Contacts extends Component {
         super(props);
         this.state = {show: false}
         this.target = React.createRef()
-        this.state = {lang: window.localStorage.getItem('lang') == "true" ? 1 : 0}
     }
     componentDidMount() {
-        document.title = langArr[0][this.state.lang].text
+        document.title = langArr[0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text
         document.querySelector("#contacts").className = "nav-link active"
     }
     componentWillUnmount() {
@@ -23,10 +22,9 @@ class Contacts extends Component {
     }
     render() {
         return (
-            this.state.lang = window.localStorage.getItem('lang') == "true" ? 1 : 0,
-            document.title = langArr[0][this.state.lang].text,
+            document.title = langArr[0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text,
             <Container>
-                <h2 style={{color: "#000077"}} className="text-center p-4">{langArr[0][this.state.lang].text}</h2>
+                <h2 style={{color: "#000077"}} className="text-center p-4">{langArr[0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}</h2>
                 <Row>
                     <Col>
                         <a rel="noreferrer" target="_blank" href="https://vk.com/steelbearrr"><img src={iconVk}  height="30px" alt="Vk"/></a>
