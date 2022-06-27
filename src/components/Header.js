@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import {Container, Navbar, Nav, Form, Row, Col} from "react-bootstrap";
 import {Route, Routes, useLocation} from "react-router-dom";
 import Home from '../pages/Home.js';
@@ -11,21 +11,27 @@ import iconEn  from "../assets/eng.png";
 import imgBackgroundHeader from "../assets/navBackHiRes.jpg";
 import {useTransition, animated} from "react-spring";
 
-
+function toggleAnim(){
+    if (!JSON.parse(window.localStorage.getItem('anim')))
+    {
+        window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))
+    }
+}
 
 function Header(){
     const [lang, setLang] = useState(JSON.parse(window.localStorage.getItem('lang')))
     const location = useLocation()
     const transitions = useTransition(location, {
         enter:{
-            transform: "translateX(0vw)"
+            transform: !JSON.parse(window.localStorage.getItem('anim')) ? "translateX(0vw)" : "translateY(0vh)"
 
         },
         from:{
-            transform: "translateX(100vw)"
+            transform: !JSON.parse(window.localStorage.getItem('anim')) ? "translateX(100vw)" : "translateY(-100vh)"
 
         }
     })
+    useEffect(()=>{window.localStorage.setItem('anim', JSON.stringify(true))})
     return (
         <>
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" style={{backgroundImage: `url(${imgBackgroundHeader})`, backgroundSize: "cover"}}>
@@ -33,11 +39,11 @@ function Header(){
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link id="home" href={process.env.PUBLIC_URL + '/#/'}>Главная</Nav.Link>
-                            <Nav.Link id="about" href={process.env.PUBLIC_URL + "/#/about"}>Обо мне</Nav.Link>
-                            <Nav.Link id="portfolio" href={process.env.PUBLIC_URL + "/#/portfolio"}>Портфолио</Nav.Link>
-                            <Nav.Link id="certificates" href={process.env.PUBLIC_URL + "/#/certificates"}>Сертификаты</Nav.Link>
-                            <Nav.Link id="contacts" href={process.env.PUBLIC_URL + "/#/contacts"}>Контакты</Nav.Link>
+                            <Nav.Link id="home" href={process.env.PUBLIC_URL + '/#/'} onClick={toggleAnim()}>Главная</Nav.Link>
+                            <Nav.Link id="about" href={process.env.PUBLIC_URL + "/#/about"} onClick={toggleAnim()}>Обо мне</Nav.Link>
+                            <Nav.Link id="portfolio" href={process.env.PUBLIC_URL + "/#/portfolio"} onClick={toggleAnim()}>Портфолио</Nav.Link>
+                            <Nav.Link id="certificates" href={process.env.PUBLIC_URL + "/#/certificates"} onClick={toggleAnim()}>Сертификаты</Nav.Link>
+                            <Nav.Link id="contacts" href={process.env.PUBLIC_URL + "/#/contacts"} onClick={toggleAnim()}>Контакты</Nav.Link>
                         </Nav>
                         <Row xs={"auto"}>
                             <Col className="mt-auto">
@@ -69,7 +75,7 @@ function Header(){
                             <Route path="/about" element={<About/>}/>
                             <Route path="/portfolio" element={<Portfolio/>}/>
                             <Route path="/certificates" element={<Certificates/>}/>
-                            <Route path="/contacts" element={<Contacts lang={lang ? "en" : "ru"}/>}/>
+                            <Route path="/contacts" element={<Contacts lang={lang}/>}/>
                         </Routes>
                     </animated.div>
                     ))}

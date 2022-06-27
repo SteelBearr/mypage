@@ -29,7 +29,7 @@ class Home extends Component {
                     <div style={{width: "70%"}}>
                         <h1 style={{color: "#000077"}}>Добро пожаловать на мой сайт!</h1>
                         <p>Здравствуй, меня зовут Михаил, я студент московского технического университета связи и информатики, обучаюсь по направлению "Иформатика и вычислительная техника". Занимаюсь программированием, фотообработкой, видеомонтажём, 3D моделированием, практически всем, что связано с информационными технологиями.</p>
-                        <Button variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/about"} data-rr-ui-event-key="/#/about">Узнать больше</Button>
+                        <Button variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/about"} data-rr-ui-event-key="/#/about" onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>Узнать больше</Button>
                     </div>
                 </Container>
 

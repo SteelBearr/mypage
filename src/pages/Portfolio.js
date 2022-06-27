@@ -34,7 +34,7 @@ class Portfolio extends Component {
                               link="https://www.github.com/SteelBearr"/>
 
                         <Work img={imageShop} alt="Business Card Site"  title="Сайт для магазина одежды"
-                              text={<>Первый веб-проект. На странице представлена краткая информация о компании, галерея, контакты и форма для отклика соискателей. Используются библиотеки <Badge pill bg="secondary">Boostrap</Badge> и <Badge pill bg="secondary">jQuery</Badge></>}
+                              text={<>Первый веб-проект. На странице представлена краткая информация о компании, галерея, контакты и форма для отклика соискателей. Используются библиотеки <Badge pill bg="secondary">Boostrap</Badge> и <span><Badge pill bg="secondary">jQuery</Badge>.</span></>}
                               link=""/>
 
                         <Work img={imageAuthorization} alt="Authorization"  title="Система авторизации"
@@ -58,8 +58,8 @@ class Portfolio extends Component {
                               link="https://www.github.com/SteelBearr"/>
 
                         <Row className="justify-content-center">
-                            <Button className="mb-3 d-lg-block d-md-block d-sm-none d-none" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"} style={{width:"163px"}}>Сертификаты</Button>
-                            <Button className="mb-3 d-lg-none d-md-none d-sm-block" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"}>Сертификаты</Button>
+                            <Button className="mb-3 d-lg-block d-md-block d-sm-none d-none" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"} style={{width:"211px"}} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>Мои сертификаты</Button>
+                            <Button className="mb-3 d-lg-none d-md-none d-sm-block" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>Мои сертификаты</Button>
                         </Row>
                     </Row>
                 </CardGroup>

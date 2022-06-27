@@ -3,7 +3,7 @@ import {Button, Col, Container, Row} from "react-bootstrap";
 import imgModeling from "../assets/3D Modeling_Big.jpg";
 import imgEnglishB1Level from "../assets/englishB1Small.jpg";
 import imgEnglishB1LevelBig from "../assets/englishB1.jpg";
-import imgSystemAdministration from "../assets/systemAdministrationAdvancedSmall.jpg";
+import imgSystemAdministration from "../assets/systemAdministrationAdvancedSmall.png";
 import imgSystemAdministrationBig from "../assets/systemAdministrationAdvanced.jpg";
 
 
@@ -41,8 +41,8 @@ class Certificates extends Component {
                                 </Col>
                             </Row>
                             <Row className="justify-content-center">
-                                <Button className="my-3 d-lg-block d-md-block d-sm-none d-none" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/contacts"} style={{width:"234px"}}>Связаться со мной</Button>
-                                <Button className="my-3 d-lg-none d-md-none d-sm-block" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/contacts"} style={{maxWidth:"95%"}}>Связаться со мной</Button>
+                                <Button className="my-3 d-lg-block d-md-block d-sm-none d-none" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/contacts"} style={{width:"234px"}} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>Связаться со мной</Button>
+                                <Button className="my-3 d-lg-none d-md-none d-sm-block" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/contacts"} style={{maxWidth:"95%"}} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>Связаться со мной</Button>
                             </Row>
                     </Container>
         );

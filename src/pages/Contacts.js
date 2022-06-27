@@ -6,6 +6,7 @@ import iconGithub from "../assets/github.png";
 import iconGmail from "../assets/gmail.png";
 
 
+
 class Contacts extends Component {
     constructor(props) {
         super(props);
