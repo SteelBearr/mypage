@@ -4,7 +4,6 @@ import iconVk from "../assets/vk.png";
 import iconTelegram from "../assets/telegram.png";
 import iconGithub from "../assets/github.png";
 import iconGmail from "../assets/gmail.png";
-import langArr from "../localization/Header.js"
 
 
 class Contacts extends Component {
