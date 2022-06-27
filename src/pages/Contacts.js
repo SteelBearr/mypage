@@ -12,7 +12,6 @@ class Contacts extends Component {
         this.state = {show: false}
         this.target = React.createRef()
         this.state = {lang: "ru"}
-        console.log(langArr)
     }
     componentDidMount() {
         document.title = "Контакты"
