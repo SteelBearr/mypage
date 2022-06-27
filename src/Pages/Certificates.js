@@ -22,22 +22,20 @@ class Certificates extends Component {
                     <Container>
                         <h2 style={{color: "#000077"}} className="text-center p-4">Сертификаты</h2>
                             <Row sm="12" className="mb-2">
-                                <Col sm="12" md="6" style={{display:"flex",justifyContent:"center",alignItems: "center"}}>
+                                <Col className="my-3" sm="12" md="6" style={{display:"flex",justifyContent:"center",alignItems: "center"}}>
                                   <a href={imgSystemAdministrationBig} rel="noreferrer" target="_blank"><img style={{width: "100%"}}
                                        src={imgSystemAdministration}
                                        alt="System Administration Certificate"/></a>
                                 </Col>
-                                <Col sm="12" md="6" style={{display:"flex",justifyContent:"center",alignItems: "center"}}>
+                                <Col className="my-3" sm="12" md="6" style={{display:"flex",justifyContent:"center",alignItems: "center"}}>
                                     <a href={imgEnglishB1LevelBig} rel="noreferrer" target="_blank"><img style={{width: "100%"}}
-                                        className="mt-4"
                                         src={imgEnglishB1Level}
                                         alt="English B1 Level Certificate"/></a>
                                 </Col>
                             </Row>
                             <Row sm="12" className="justify-content-md-center">
-                                <Col sm="12" md="6">
+                                <Col className="my-3" sm="12" md="6">
                                     <a href={imgModeling} rel="noreferrer" target="_blank"><img style={{width: "100%"}}
-                                    className="mt-4"
                                     src={imgModeling}
                                     alt="3D Modeling Certificate"/></a>
                                 </Col>
