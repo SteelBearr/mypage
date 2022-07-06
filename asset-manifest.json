@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Frontend-MTUCI/static/css/main.d4133a4a.css",
-    "main.js": "/Frontend-MTUCI/static/js/main.ac3c5986.js",
+    "main.js": "/Frontend-MTUCI/static/js/main.5bf0d647.js",
     "static/js/787.635aedaa.chunk.js": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js",
     "static/media/systemAdministrationAdvanced.jpg": "/Frontend-MTUCI/static/media/systemAdministrationAdvanced.2a6e580335a6b0428e48.jpg",
     "static/media/photo.png": "/Frontend-MTUCI/static/media/photo.b049c21b4c6f16fdf2e9.png",
@@ -24,11 +24,11 @@
     "static/media/eng.png": "/Frontend-MTUCI/static/media/eng.7c4f54ca6642b133fa19.png",
     "index.html": "/Frontend-MTUCI/index.html",
     "main.d4133a4a.css.map": "/Frontend-MTUCI/static/css/main.d4133a4a.css.map",
-    "main.ac3c5986.js.map": "/Frontend-MTUCI/static/js/main.ac3c5986.js.map",
+    "main.5bf0d647.js.map": "/Frontend-MTUCI/static/js/main.5bf0d647.js.map",
     "787.635aedaa.chunk.js.map": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4133a4a.css",
-    "static/js/main.ac3c5986.js"
+    "static/js/main.5bf0d647.js"
   ]
 }
