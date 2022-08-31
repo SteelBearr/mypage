@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Frontend-MTUCI/static/css/main.d4133a4a.css",
-    "main.js": "/Frontend-MTUCI/static/js/main.5bf0d647.js",
+    "main.css": "/Frontend-MTUCI/static/css/main.da0f4e82.css",
+    "main.js": "/Frontend-MTUCI/static/js/main.67bcae23.js",
     "static/js/787.635aedaa.chunk.js": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js",
     "static/media/systemAdministrationAdvanced.jpg": "/Frontend-MTUCI/static/media/systemAdministrationAdvanced.2a6e580335a6b0428e48.jpg",
     "static/media/photo.png": "/Frontend-MTUCI/static/media/photo.b049c21b4c6f16fdf2e9.png",
@@ -23,12 +23,12 @@
     "static/media/dataBaseProject.jpg": "/Frontend-MTUCI/static/media/dataBaseProject.046fc74481b8ee5b63f7.jpg",
     "static/media/eng.png": "/Frontend-MTUCI/static/media/eng.7c4f54ca6642b133fa19.png",
     "index.html": "/Frontend-MTUCI/index.html",
-    "main.d4133a4a.css.map": "/Frontend-MTUCI/static/css/main.d4133a4a.css.map",
-    "main.5bf0d647.js.map": "/Frontend-MTUCI/static/js/main.5bf0d647.js.map",
+    "main.da0f4e82.css.map": "/Frontend-MTUCI/static/css/main.da0f4e82.css.map",
+    "main.67bcae23.js.map": "/Frontend-MTUCI/static/js/main.67bcae23.js.map",
     "787.635aedaa.chunk.js.map": "/Frontend-MTUCI/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4133a4a.css",
-    "static/js/main.5bf0d647.js"
+    "static/css/main.da0f4e82.css",
+    "static/js/main.67bcae23.js"
   ]
 }
