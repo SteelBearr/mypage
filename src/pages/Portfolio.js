@@ -29,11 +29,11 @@ class Portfolio extends Component {
                     <Row className="justify-content-center">
                         <Work img={imageDataBaseProject} alt={langArr[1][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}  title={langArr[1][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
                               text={langArr[1][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
-                              link="https://www.github.com/SteelBearr"/>
+                              link="https://www.github.com/SteelBearr/Sibirskiye-airlines"/>
 
                         <Work img={imageCrawler} alt={langArr[2][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}  title={langArr[2][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
                               text={langArr[2][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
-                              link="https://www.github.com/SteelBearr"/>
+                              link="https://www.github.com/SteelBearr/Crawler"/>
 
                         <Work img={imageShop} alt={langArr[3][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}  title={langArr[3][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
                               text={langArr[3][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
@@ -41,23 +41,23 @@ class Portfolio extends Component {
 
                         <Work img={imageAuthorization} alt={langArr[4][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}  title={langArr[4][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
                               text={langArr[4][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
-                              link="https://www.github.com/SteelBearr"/>
+                              link="https://www.github.com/SteelBearr/Authorization-System"/>
 
                         <Work img={imageTechnicalInspection} alt={langArr[5][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}  title={langArr[5][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
                               text={langArr[5][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
-                              link="https://www.github.com/SteelBearr"/>
+                              link="https://www.github.com/SteelBearr/Vehicle-Inspection"/>
 
                         <Work img={imageDarkestDungeonMod} alt={langArr[6][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}  title={langArr[6][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
                               text={langArr[6][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
-                              link="https://www.github.com/SteelBearr"/>
+                              link="https://www.github.com/SteelBearr/Darkest-Dungeon-Character-Mod"/>
 
                         <Work img={imageWitcher3Mod} alt={langArr[7][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}  title={langArr[7][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
                               text={langArr[7][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
-                              link="https://www.github.com/SteelBearr"/>
+                              link="https://www.github.com/SteelBearr/The-Witcher-3-Gwent-Mod"/>
 
                         <Work img={imageGameSaver} alt={langArr[8][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}  title={langArr[8][0][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
                               text={langArr[8][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}
-                              link="https://www.github.com/SteelBearr"/>
+                              link=""/>
 
                         <Row className="justify-content-center">
                             <Button className="mb-3 d-lg-block d-md-block d-sm-none d-none" variant="outline-dark" size="lg" href={process.env.PUBLIC_URL + "/#/certificates"} style={{width:"214px"}} onClick={() => {window.localStorage.setItem('anim', JSON.stringify(!JSON.parse(window.localStorage.getItem('anim'))))}}>{langArr[0][1][window.localStorage.getItem('lang') === "true" ? 1 : 0].text}</Button>
